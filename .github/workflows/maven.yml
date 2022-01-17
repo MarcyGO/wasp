@@ -25,6 +25,6 @@ jobs:
     - name: Build with Maven
       run: mvn test-compile -pl . -am
     - name: run test without NonDex
-      run: mvn -pl . test -Dtest=com.alibaba.wasp.fserver#TestSplitTransaction
+      run: mvn -pl . test -Dtest=com.alibaba.wasp.fserver.TestSplitTransaction
     - name: run test with NonDex
-      run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.alibaba.wasp.fserver#TestSplitTransaction
+      run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.alibaba.wasp.fserver.TestSplitTransaction
